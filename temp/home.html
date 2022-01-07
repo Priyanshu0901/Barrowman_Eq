@@ -1,0 +1,26 @@
+{%extends 'base.html'%}
+
+{% block content %}
+<header>
+<h1>Barrowman Equation Calculator </h1>
+</header>
+<aside>
+<form action="eq">
+    LN	=	length of nose : <input type="text" name="LN"><br>
+    d	=	diameter at base of nose : <input type="text" name="d"><br>
+    dF	=	diameter at front of transition : <input type="text" name="dF"><br>
+    dR	=	diameter at rear of transition : <input type="text" name="dR"><br>
+    LT	=	length of transition : <input type="text" name="LT"><br>
+    XP	=	distance from tip of nose to front of transition : <input type="text" name="XP"><br>
+    CR	=	fin root chord : <input type="text" name="CR"><br>
+    CT	=	fin tip chord : <input type="text" name="CT"><br>
+    S	=	fin semispan : <input type="text" name="S"><br>
+    LF	=	length of fin mid-chord line : <input type="text" name="LF"><br>
+    R	=	radius of body at aft end : <input type="text" name="R"><br>
+    XR	=	distance between fin root leading edge and fin tip leading edge parallel to body : <input type="text" name="XR"><br>
+    XB	=	distance from nose tip to fin root chord leading edge : <input type="text" name="XB"><br>
+    N	=	number of fins: <input type="text" name="N"><br>
+    <input type="submit">
+</aside>
+</form>
+{% endblock %}
