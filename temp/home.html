@@ -2,9 +2,13 @@
 
 {% block content %}
 <header>
-<h1>Barrowman Equation Calculator </h1>
+<h1 style="text-align:center;">Barrowman Equation Calculator </h1>
 </header>
-<aside>
+{% load static %} 
+<p>
+<img src="{% static "\res" %}" alt="home" />
+</p>
+<aside style="text-align:right;">
 <form action="eq">
     LN	=	length of nose : <input type="text" name="LN"><br>
     d	=	diameter at base of nose : <input type="text" name="d"><br>
@@ -21,6 +25,7 @@
     XB	=	distance from nose tip to fin root chord leading edge : <input type="text" name="XB"><br>
     N	=	number of fins: <input type="text" name="N"><br>
     <input type="submit">
-</aside>
+
 </form>
+</aside>
 {% endblock %}
